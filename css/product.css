@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.logo-box{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.search{
+    border-radius: 20px;
+    width: 400px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+}
+.search i{
+    color: #ccc;
+    font-size: 20px;
+}
+.search input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: left;
+}
+.search input::placeholder{
+    color: #ccc;
+}
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    gap: 50px;
+}
+.taskbar{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.taskbar-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 20px; 
+    align-items: center;
+    padding:20px 5px;
+}
+.taskbar-item:hover{
+    background:#ccc;
+    cursor: pointer;
+}
+.end{
+    border-radius: 50%;
+}
+.active{
+    background: #ccc;
+}
+.taskbar-item a{
+    font-style: normal;
+    text-decoration: none;
+    color: #000;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.content-title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.item-content{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 40px   20px;
+    /* justify-content: space-around; */
+    padding: 30px;
+}
+
+.item-content-price{
+    flex-grow: 1;
+    background: #f8f8f8;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    gap: 20px;
+}
+.picture{
+    width: 100%;
+    border-radius:10px 10px 0 0;
+}
+.text{
+    font-weight: 600;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+.item-price{
+    font-weight: 600;
+    font-size: 1rem;
+    padding-left: 20px;
+    color:#f05123;
+}
+.item-content-price:hover{
+    cursor: pointer;
+    box-shadow: 11px 16px 14px -5px rgba(184,178,178,0.75);
+    -webkit-box-shadow: 11px 16px 14px -5px rgba(184,178,178,0.75);
+    -moz-box-shadow: 11px 16px 14px -5px rgba(184,178,178,0.75);
+    align-self:flex-start;
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+.item-price1{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
