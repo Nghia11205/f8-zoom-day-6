@@ -91,7 +91,7 @@ body{
     font-weight: 800;
     margin-top: 10px;
 }
-.item-content{
+.container-item{
     display: flex;
     flex-wrap:wrap;
     gap: 40px   20px;
