@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+:root{
+    --primary-color:#eb8760;
+}
+.wrapper{
+    background: #1a3048;
+    width: 1000px;
+    min-height: 100vh;
+    margin: 50px auto;
+    display: flex;
+    gap: 30px;
+}
+.container-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 30px;
+    width: 350px;
+    background-color:cornflowerblue;
+}
+.image{
+    width: 280px;
+    height: 180px;
+}
+.logan{
+    color: #fff;
+    font-size: 2rem;
+}
+.container-right{
+    flex-grow: 1;
+}
+.wrapper-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px 60px 20px 20px;
+}
+.header{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    align-items: center;
+}
+.text{
+    color: #fff;
+    font-size: 0.8rem;
+    align-self: center;
+}
+.text a, .end-label a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.container{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+.intro{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    align-items: center;
+}
+.form-action{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+    justify-content: space-between;
+}
+.form-group{
+    width: 45%;
+}
+.form-label{
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+}
+.form-input{
+    width: 100%;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+.form-input:invalid{
+    border: red solid 1px;
+}
+.form-input:focus{
+    border: cornflowerblue solid 1px;
+    outline: none;
+}
+.end-label span{
+    color: #fff;
+    margin-left: 10px;
+}
+.end-label input:hover{
+    cursor: pointer;
+}
+
+.btn{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    color: black;
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+.social{
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.social i{
+    color: var(--primary-color);
+}
+.social:hover{
+    background: var(--primary-color);
+    cursor: pointer;
+    color:#fff;
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
