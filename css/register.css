@@ -52,9 +52,24 @@ body{
     font-size: 0.8rem;
     align-self: center;
 }
-.text a, .end-label a{
+.text a{
     text-decoration: none;
     color: var(--primary-color);
+    text-align: center;
+}
+.end-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.end-label a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.end-label span{
+    line-height: 16px;
 }
 .container{
     margin-top: 80px;
@@ -83,6 +98,10 @@ body{
     display: block;
     margin: 10px 0;
     color: #fff;
+}
+.form-label::after{
+    content: "*";
+    color: red;
 }
 .form-input{
     width: 100%;
@@ -128,7 +147,7 @@ body{
     color: var(--primary-color);
 }
 .social:hover{
-    background: var(--primary-color);
+    background: #ec9ecc;
     cursor: pointer;
     color:#fff;
     transform: translateY(-5px);
