@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "PT Sans", sans-serif;
+}
+.wrapper{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.wrapper h1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(97, 199, 165);
+    margin-top: 50px;
+}
+.wrapper .pond1{
+    width: 100%;
+}
+.wrapper .pond1 img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 10px;
+}
+.wrapper .pond2{
+    width: 100%;
+}
+.wrapper .pond2 img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.wrapper h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(97, 199, 165);
+    margin-bottom: 20px;   
+}
